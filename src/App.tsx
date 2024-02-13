@@ -24,16 +24,36 @@ export default function App() {
 			</div>
 			<div className='bg-amber-900 w-1/4 relative flex flex-col'>
 				<h2 className='text-3xl p-2 w-full bg-slate-100 text-center'>Team B</h2>
-				<div className='bg-yellow-300 h-1/5'></div>
-				<div className='bg-yellow-300 h-1/5'></div>
-				<div className='bg-yellow-300 h-1/5'></div>
-				<div className='bg-yellow-300 h-1/5'></div>
-				<div className='bg-yellow-300 h-1/5'></div>
-				<div className='bg-yellow-300 h-1/5'></div>
-				<div className='bg-yellow-300 h-1/5'></div>
-				<div className='bg-yellow-300 h-1/5'></div>
-				<div className='bg-yellow-300 h-1/5'></div>
-				<div className='bg-yellow-300 h-1/5'></div>
+				<div className='bg-yellow-300 h-1/5 px-2 py-1 text-red-900 text-2xl'>
+					Something
+				</div>
+				<div className='bg-yellow-300 h-1/5 px-2 py-1 text-red-900 text-2xl'>
+					Something
+				</div>
+				<div className='bg-yellow-300 h-1/5 px-2 py-1 text-red-900 text-2xl'>
+					Something
+				</div>
+				<div className='bg-yellow-300 h-1/5 px-2 py-1 text-red-900 text-2xl'>
+					Something
+				</div>
+				<div className='bg-yellow-300 h-1/5 px-2 py-1 text-red-900 text-2xl'>
+					Something
+				</div>
+				<div className='bg-yellow-300 h-1/5 px-2 py-1 text-red-900 text-2xl'>
+					Something
+				</div>
+				<div className='bg-yellow-300 h-1/5 px-2 py-1 text-red-900 text-2xl'>
+					Something
+				</div>
+				<div className='bg-yellow-300 h-1/5 px-2 py-1 text-red-900 text-2xl'>
+					Something
+				</div>
+				<div className='bg-yellow-300 h-1/5 px-2 py-1 text-red-900 text-2xl'>
+					Something
+				</div>
+				<div className='bg-yellow-300 h-1/5 px-2 py-1 text-red-900 text-2xl'>
+					Something
+				</div>
 			</div>
 		</div>
 	)
