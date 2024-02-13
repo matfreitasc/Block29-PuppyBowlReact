@@ -1,4 +1,4 @@
-import Field from '@assets/Field.svg'
+import Field from '@components/Field'
 
 export default function App() {
 	return (
@@ -20,9 +20,7 @@ export default function App() {
 				<h1 className='absolute top-4 mx-auto z-10 text-3xl text-white'>
 					Puppy Bowl
 				</h1>
-				<object type='image/svg+xml' data={Field}>
-					Field SVG Animation
-				</object>
+				<Field />
 			</div>
 			<div className='bg-amber-900 w-1/4 relative flex flex-col'>
 				<h2 className='text-3xl p-2 w-full bg-slate-100 text-center'>Team B</h2>
