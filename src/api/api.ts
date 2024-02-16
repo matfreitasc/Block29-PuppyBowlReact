@@ -37,3 +37,16 @@ export async function addPlayers({ request }: NewPlayerRequest) {
   console.log(teamData)
   return redirect('/')
 }
+
+export async function deletePlayer(id: number) {
+  const response = await fetch(`${url}/players/${id}`, {
+    method: 'DELETE',
+  })
+  const { error } = await response.json()
+
+  if (error) {
+    throw new Error(error)
+  }
+  return redirect('/')
+}
+
