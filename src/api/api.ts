@@ -1,5 +1,5 @@
 import { redirect } from 'react-router-dom'
-import type { Player, Team } from '../types/types.ts'
+import type { NewPlayerRequest, Player } from '../types/types.ts'
 
 const url = 'https://fsa-puppy-bowl.herokuapp.com/api/2308-ac-pt-web-pt-a/'
 
@@ -15,7 +15,7 @@ export async function getTeams(): Promise<Player[]> {
   return players
 }
 
-export async function addPlayers({ request }) {
+export async function addPlayers({ request }: NewPlayerRequest) {
   const formData = await request.formData()
   const player = Object.fromEntries(formData)
 

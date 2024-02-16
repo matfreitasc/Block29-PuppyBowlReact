@@ -18,3 +18,8 @@ export interface Team {
   cohortId: number
   players: Player[]
 }
+
+export interface NewPlayerRequest {
+  request: Request
+}
+
