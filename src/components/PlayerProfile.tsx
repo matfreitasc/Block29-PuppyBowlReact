@@ -22,6 +22,7 @@ const PlayerProfile = (props: Props) => {
         navigate('/')
       })
       .catch((error) => {
+        console.log(error)
         navigate('/')
       })
   }
