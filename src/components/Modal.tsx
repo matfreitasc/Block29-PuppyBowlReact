@@ -1,4 +1,4 @@
-import { Form } from 'react-router-dom'
+import { Form, redirect } from 'react-router-dom'
 
 interface Props {
   onClose: () => void
@@ -78,8 +78,9 @@ export default function Modal(props: Props) {
               </select>
               <button
                 type='submit'
-                onSubmit={() => {
+                onClick={() => {
                   onClose()
+                  redirect('/')
                 }}
                 className='flex w-full bg-gray-700 mt-4 justify-center rounded-md  px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
               >

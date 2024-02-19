@@ -1,4 +1,3 @@
-import { redirect } from 'react-router-dom'
 import type { NewPlayerRequest, Player } from '../types/types.ts'
 
 const url = 'https://fsa-puppy-bowl.herokuapp.com/api/2308-ac-pt-web-pt-a/'
@@ -34,8 +33,7 @@ export async function addPlayers({ request }: NewPlayerRequest) {
     throw new Error(error)
   }
   const teamData = await getTeams() // get updated teams
-  console.log(teamData)
-  return redirect('/')
+  return teamData
 }
 
 export async function deletePlayer(id: number) {
@@ -47,6 +45,5 @@ export async function deletePlayer(id: number) {
   if (error) {
     throw new Error(error)
   }
-  return redirect('/')
+  return true
 }
-
